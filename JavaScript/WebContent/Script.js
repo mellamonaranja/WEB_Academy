@@ -1,0 +1,1 @@
+document.write("it executes in js file<br>");

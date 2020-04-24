@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+	window.onload=function(){
+		var allSpans=document.getElementsByTagName('span');
+		
+		var output1='';
+		for(var i=0;i<allSpans.length;i++){
+			output1+=allSpans[i].innerHTML+'\n';
+		}
+		alert(output1);
+		
+		
+		var str=document.getElementsById('str');
+		var strSpan=str.getElementsByTagName('span');
+		
+		var output2='';
+		for(var i=0;i<strSpan.length;i++){
+			output2+=strSpan[i].innerHTML+'\n';
+		}
+		alert(output2);
+		
+		var num=document.getElementsById('num');
+		var numSpans=num.getElementsByTagName('span');
+		
+		var output3='';
+		for(var i=0;i<numSpans.length;i++){
+			output3+=numSpans[i].innerHTML+'\n';
+		}
+		alert(output3);
+	};
+	
+	
+</script>
+</head>
+<body>
+	<p id="str">
+		<span>a</span><br>
+		<span>b</span><br>
+		<span>c</span><br>
+		<span>d</span><br>
+	</p>
+	
+	<p id="num">
+		<span>1</span><br>
+		<span>2</span><br>
+		<span>3</span><br>
+		<span>4</span><br>
+	</p>
+</body>
+</html>

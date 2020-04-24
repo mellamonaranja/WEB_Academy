@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+table{
+	bordeer-collapse:collapse;
+}
+
+tr, td{
+	border:2px solid orange;
+	padding:5px;
+}
+</style>
+<script type="text/javascript">
+	var arr=[2019,true,'javascript'];
+	var result="<table><tr>";
+	for(var index in arr){
+		/* put arr into index */
+		result+="<td>"+arr[index]+"</td>";
+	}
+	
+	result+="</tr></table>";
+	
+	document.write(result);
+</script>
+</head>
+<body>
+
+</body>
+</html>

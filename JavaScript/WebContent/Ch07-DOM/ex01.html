@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+</head>
+<body>
+	<h3>the way to select with HTML tag name</h3>
+	<p>First paragraph</p>
+	<ul>
+		<li>item 1</li>
+		<li>item 2</li>
+		<li>item 3</li>
+		<li>item 4</li>
+		<li>item 5</li>
+	</ul>
+	
+	<p>Second paragraph</p>
+	<ul>
+		<li>item 1</li>
+		<li>item 2</li>
+		<li>item 3</li>
+		<li>item 4</li>
+		<li>item 5</li>
+	</ul>
+	
+	<script type="text/javascript">
+		var selectedItem=document.getElementsByTagName('li');
+		/* li has not only one therefore need to use getElement's' */
+		/* selectedItem is an object */
+		
+		for(var i=0;i<selectedItem.length;i++){
+			selectedItem.item(i).style.color="orange";
+			/* style is one of node object */
+			/* this is same as <li style="color:red"> */
+		}
+	
+	</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+	window.onload=function(){
+		var prev=document.getElementsByName('prev');
+		var next=document.getElementsByName('next');
+		
+		prev[0].innerHTML='PREV';
+		next[0].innerHTML='NEXT';
+		
+		var country = document.getElementsByName('country');
+		country[1].checked=true;
+		
+		var comment=document.getElementsByName('comment');
+		comment[0].value='aaaaa';
+	};
+</script>
+</head>
+<body>
+	<button name="prev">prev</button><br>
+	<button name="next">next</button><br>
+	
+	<input type="Checkbox" name="country" value="Korea1">Korea1
+	<input type="Checkbox" name="country" value="Korea2">Korea2
+	<input type="Checkbox" name="country" value="Korea3">Korea3
+	<input type="Checkbox" name="country" value="Korea4">Korea4
+	<input type="Checkbox" name="country" value="Korea5" checked="true">Korea5
+	
+	<br>
+	<input type="text" name="comment">
+</body>
+</html>

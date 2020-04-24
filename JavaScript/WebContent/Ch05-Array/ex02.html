@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var array1=[1,2,3,4,5];
+	
+	document.write(array1+"<br>");
+	document.write(array1[0]+"<br>");
+	document.write(array1[1]+"<br>");
+	document.write(array1[2]+"<br>");
+	document.write(array1[3]+"<br>");
+	document.write(array1[4]+"<br>");
+	document.write(array1[5]+"<br>");
+	/* there isnt element 5th, but it calls 5th therefore it shows undefined */
+	document.write('<br>');
+	array1[5]=array1[0]+array1[1]
+	
+	
+	document.write(array1[0]+"<br>");
+	document.write(array1[1]+"<br>");
+	document.write(array1[2]+"<br>");
+	document.write(array1[3]+"<br>");
+	document.write(array1[4]+"<br>");
+	document.write(array1[5]+"<br>");
+	document.write('<br>');
+	
+	document.write(array1.length);
+	
+	array1[array1.length]=array1[2]+array1[3];
+	
+	document.write('<br>');
+	document.write(array1[0]+"<br>");
+	document.write(array1[1]+"<br>");
+	document.write(array1[2]+"<br>");
+	document.write(array1[3]+"<br>");
+	document.write(array1[4]+"<br>");
+	document.write(array1[5]+"<br>");
+	document.write(array1[6]+"<br>");
+	
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+#header{
+	background-color:blue;
+	color:white; 
+	height:100px
+}
+
+#navigation{
+	background-color:#339999;
+	color:white; 
+	width:200px; 
+	height:300px;
+	float:left;
+}
+
+#section{
+	text=align:left;
+	width:200px; 
+	padding:10px; 
+	float:left;
+}
+
+#footer{
+background-color:#ffcc00;
+height:100px;
+clear:both;
+}
+
+#header, #navigation, #footer{
+text-align:center;
+}
+
+#header, #footer{
+line-height:100px;
+}
+
+#navigation, #section{
+line-height:240px;
+} 
+
+
+</style>
+</head>
+<body>
+
+	<div id="header">
+	
+	<h2>Header</h2>
+	
+	</div>
+	
+	<div id="navigation">
+	<h2>Navigation</h2>
+	
+	</div>
+	
+	<div id="section">
+	<h2>Section</h2>
+	
+	</div>
+	
+	<div id="footer">
+	
+	<!-- left and right of float feature have been cleared-->
+	<!-- unless, it affected by section  -->
+	<h2>Footer</h2>
+	
+	</div>
+	
+</body>
+</html>

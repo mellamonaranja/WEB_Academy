@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+	window.onload=function(){
+		var my=document.getElementById("my");
+		var element=my.parentnode;
+		alert(element.id);
+		
+		element=my.firstChild();
+		alert(element.id);
+		
+		element=element.nextSibling;
+		alert(element.id);
+		
+		element=my.lastchild;
+		alert(element.id);
+		
+		element=element.previousSibling;
+		alert(element.id);
+	};
+
+</script>
+</head>
+<body>
+	<div id="a">
+		<div id="b"></div>
+		<div id="my">
+			<div id="c">
+				<div id="d"></div>
+			</div>
+			<div id="e"></div>			
+			</div>
+			<div id="f"></div>
+			<div id="g"></div>
+		</div>
+</body>
+</html>

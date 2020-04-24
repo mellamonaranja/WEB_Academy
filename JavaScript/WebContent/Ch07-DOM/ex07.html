@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+	window.onload=function(){
+		var spans=document.getElementsByTagName('span');
+		
+		for(var i=0;i<spans.length;i++){
+			if(i%2==1){
+				spans[i].innerHTML='1 and 2'
+			}else{
+				spans[i].innerHTML='3 and 4'
+			}
+		}
+	};
+</script>
+</head>
+<body>
+
+<span>spring</span><br>
+<span>summer</span><br>
+<span>autumn</span><br>
+<span>winter</span><br>
+
+</body>
+</body>
+</html>

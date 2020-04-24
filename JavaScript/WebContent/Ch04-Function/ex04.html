@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function aaa(){
+		document.write('funcion1 aaa <br>');
+	}
+	
+	function aaa(){
+		document.write('funcion2 aaa <br>');
+	}
+	
+	aaa();
+	/* it return the last function meaning doesn't call funcion1 */
+	
+	bbb();
+	function bbb(){
+		document.write('funcion1 bbb <br>');
+	}
+	/* call the function first before define, it can be called */
+	
+	var ccc=function(){
+		document.write('funcion1 ccc <br>');
+	}
+	
+	var ccc=function(){
+		document.write('funcion2 ccc <br>');
+	}
+	
+	ccc();
+	
+	/* call the function first before define, it can be called */
+	
+	ddd();
+	
+	var ddd=function(){
+		document.write('funcion1 ddd <br>');
+	}
+	
+	/* when function hasn't name, it cannot call first, it needs to be defined first  
+	therefore, in this case, ddd cannot be called*/
+</script>
+</head>
+<body>
+
+</body>
+</html>

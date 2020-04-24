@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+.box{
+	width:300px;
+	height:150px;
+	border:1px solid #aaaaaa;
+
+	background-image: url('image1.png');
+	background-size:50px;
+	margin-bottom:10px;
+}
+
+#box1{
+	background-position:center center;
+	background-repeat:no-repeat;
+}
+
+#box2{
+	background-position:0px 0px;
+	background-repeat:repeat;
+	/* this is default value */
+}
+
+#box3{
+	background-position:-20px -20px;
+	background-repeat:repeat-x;
+}
+
+#box4{
+	background-position:40px -90px;
+	background-repeat:repeat-y;
+}
+
+#box5{
+	background-position:left bottom;
+	background-repeat:no-repeat;
+}
+
+</style>
+</head>
+<body>
+	<div id="box1" class="box"></div>
+	<div id="box2" class="box"></div>
+	<div id="box3" class="box"></div>
+	<div id="box4" class="box"></div>
+	<div id="box5" class="box"></div>
+	
+</body>
+</html>

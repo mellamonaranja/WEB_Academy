@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var empty={};
+	/* create the object without any elements*/
+	
+	var product={
+			/* define the object with key:value  */
+			product:'a',
+			productnumber:'111',
+			pfunction:'s memo',
+			price:3000,
+			update:true
+	};
+	
+	document.write(product.product+"<br>");
+	document.write(product.pfunction+"<br>");
+	
+	document.write(product['product']+"<br>");
+	document.write(product['pfunction']+"<br>");
+	/* if want to print out with [], need to use '' or "" */
+	
+	product.version=10;
+	document.write(product.version+"<br>");
+	
+	product['version']=11;
+	document.write(product['version']+"<br>");
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+	window.onload=function(){
+	var element=document.createElement('div');
+	var text=document.createTextNode('text');
+	element.appendChild(text);
+	
+	document.body.appendChild(element);
+	
+	var comment=document.createComment('comment');
+	document.body.insertBefore(comment, element);
+	
+	};
+</script>
+</head>
+<body>
+
+</body>
+</html>

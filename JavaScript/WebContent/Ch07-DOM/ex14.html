@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h3>Web programming</h3>
+	<h2 id="item">JSP</h2>
+	<div id="list">
+		<p>a</p>
+		<p id="criteria">b</p>
+		<p>c</p>
+		<p>d</p>
+	</div>
+	<button onclick="appendNode()">add node</button>
+	
+	<script type="text/javascript">
+	function appendNode(){
+		var parent=document.getElementById('list');
+		var criteria=document.getElementById('criteria');
+		var newItem=document.getElementById('item');
+		
+		parent.insertBefore(newItem, criteria);
+	}
+	</script>
+</body>
+</html>
